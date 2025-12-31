@@ -53,9 +53,12 @@ return {
       vim.lsp.config("html", {})
       vim.lsp.config("cssls", {})
       vim.lsp.config("jsonls", {})
+      vim.lsp.config("gopls", {})
+      vim.lsp.config("clojure_lsp", {})
+      vim.lsp.config("jdtls", {})
 
       -- Enable configured servers
-      vim.lsp.enable({ "lua_ls", "ts_ls", "pyright", "html", "cssls", "jsonls" })
+      vim.lsp.enable({ "lua_ls", "ts_ls", "pyright", "html", "cssls", "jsonls", "gopls", "clojure_lsp", "jdtls" })
     end,
   },
 }
