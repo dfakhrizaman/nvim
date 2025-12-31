@@ -18,6 +18,9 @@ return {
           "html",
           "cssls",
           "jsonls",
+          "gopls",
+          "clojure_lsp",
+          "jdtls",
         },
       })
     end,

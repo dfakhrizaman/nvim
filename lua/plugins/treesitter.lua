@@ -21,6 +21,11 @@ return {
         "bash",
         "go",
         "clojure",
+        "java",
+        "make",
+        "just",
+        "yaml",
+        "dockerfile"
       },
       highlight = { enable = true },
       indent = { enable = true },
