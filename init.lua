@@ -8,6 +8,12 @@ vim.g.maplocalleader = ","
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+-- Enable folding with treesitter
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldenable = false -- Start with folds open
+vim.opt.foldlevel = 99
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
